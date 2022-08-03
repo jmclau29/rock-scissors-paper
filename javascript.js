@@ -60,7 +60,7 @@ function playRound(playerSelection, computerSelection) {
         } else if (computerSelection === 'scissors') {
             ++computerScore;
             computerScoreDiv.textContent = computerScore;
-            roundAnnounceDiv.textContent = 'PC played paper! You lose! Scissors beats paper!';
+            roundAnnounceDiv.textContent = 'PC played scissors! You lose! Scissors beats paper!';
         }
     }
 
