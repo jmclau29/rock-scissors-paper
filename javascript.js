@@ -36,8 +36,8 @@ function playRound(playerSelection, computerSelection) {
     }
 
     //check for a tie
-    if (playerSelection === computerSelection) {
-        roundAnnounceDiv.textContent = 'It\'s a tie!';
+    if (playerSelection === computerSelection) { 
+        roundAnnounceDiv.textContent = 'You and PC played the same move! It\'s a tie!';
     }
 
     //compare the player and computer moves to see who wins.
@@ -45,22 +45,22 @@ function playRound(playerSelection, computerSelection) {
         if (computerSelection === 'scissors') {
             ++playerScore;
             playerScoreDiv.textContent = playerScore;
-            roundAnnounceDiv.textContent = 'You win! Rock beats scissors!';
+            roundAnnounceDiv.textContent = 'PC played scissors! You win! Rock beats scissors!';
         } else if (computerSelection === 'paper') {
             ++computerScore;
             computerScoreDiv.textContent = computerScore;
-            roundAnnounceDiv.textContent = 'You lose! Paper beats rock!';
+            roundAnnounceDiv.textContent = 'PC played paper! You lose! Paper beats rock!';
         }
     }
     if (playerSelection === 'paper') {
         if (computerSelection === 'rock') {
             ++playerScore;
             playerScoreDiv.textContent = playerScore;
-            roundAnnounceDiv.textContent = 'You win! Paper beats rock!';
+            roundAnnounceDiv.textContent = 'PC played rock! You win! Paper beats rock!';
         } else if (computerSelection === 'scissors') {
             ++computerScore;
             computerScoreDiv.textContent = computerScore;
-            roundAnnounceDiv.textContent = 'You lose! Scissors beats paper!';
+            roundAnnounceDiv.textContent = 'PC played paper! You lose! Scissors beats paper!';
         }
     }
 
@@ -68,11 +68,11 @@ function playRound(playerSelection, computerSelection) {
         if (computerSelection === 'paper') {
             ++playerScore;
             playerScoreDiv.textContent = playerScore;
-            roundAnnounceDiv.textContent = 'You win! Scissors beats paper!';
+            roundAnnounceDiv.textContent = 'PC played paper! You win! Scissors beats paper!';
         } else if (computerSelection === 'rock') {
             ++computerScore;
             computerScoreDiv.textContent = computerScore;
-            roundAnnounceDiv.textContent = 'You lose! Rock beats scissors!';
+            roundAnnounceDiv.textContent = 'PC played rock! You lose! Rock beats scissors!';
         }
     }
 
